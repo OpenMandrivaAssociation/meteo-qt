@@ -8,6 +8,7 @@ URL:		http://qt-apps.org/content/show.php/meteo-qt?content=167733
 Source0:	https://github.com/dglent/meteo-qt/archive/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-qt5-devel
+BuildRequires:	qt5-linguist-tools
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	imagemagick
 Requires:	python-qt5
@@ -36,8 +37,8 @@ convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicol
 %{_datadir}/%{aname}/images/
 %{_bindir}/%{name}
 %{_iconsdir}/%{name}.png
-%{python3_sitelib}/%{aname}-%{version}-py%py3ver.egg-info
-%{python3_sitelib}/%{aname}/
+%{python_sitelib}/%{aname}-%{version}-py%py3ver.egg-info
+%{python_sitelib}/%{aname}/
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/meteo-qt.png
 %{_datadir}/meteo_qt/translations/
