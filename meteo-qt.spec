@@ -13,8 +13,8 @@ BuildRequires:	pkgconfig(python3)
 BuildRequires:	imagemagick
 Requires:	python-qt5
 Requires:	python3-sip
-Requires:	python-urllib3
-Requires:	python-lxml
+Requires:	python3egg(urllib3)
+Requires:	python3egg(lxml)
 Requires:	qt5-qttranslations
 
 %description
