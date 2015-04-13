@@ -1,7 +1,7 @@
 Summary:	Weather status system tray application
 Name:		meteo-qt
 Version:	0.5.0
-Release:	1
+Release:	2
 License:	GPLv3
 Group:		Graphical desktop/Other
 URL:		http://qt-apps.org/content/show.php/meteo-qt?content=167733
@@ -12,7 +12,7 @@ BuildRequires:	qt5-linguist-tools
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	imagemagick
 Requires:	python-qt5
-Requires:	python3-sip
+Requires:	python-sip
 Requires:	python3egg(urllib3)
 Requires:	python3egg(lxml)
 Requires:	qt5-qttranslations
