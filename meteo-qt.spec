@@ -24,10 +24,14 @@ A Qt system tray application for the weather status.
 %setup -q
 
 %build
-python setup.py build
+# (tpg) needed for lrelease
+export PATH=%{_libdir}/qt5/bin:$PATH
+
+%{__python} setup.py build
 
 %install
-python setup.py install --skip-build --root=%{buildroot}
+%{__python} setup.py install --skip-build --root=%{buildroot}
+
 mkdir -p %{buildroot}%{_iconsdir}/hicolor/{16x16,32x32}/apps
 convert -scale 16x16 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/meteo-qt.png
 convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/32x32/apps/meteo-qt.png
