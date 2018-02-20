@@ -41,7 +41,7 @@ convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicol
 %{_datadir}/meteo_qt/images/
 %{_bindir}/%{name}
 %{_iconsdir}/%{name}.png
-%{python_sitelib}/meteo_qt-%{version}-py%py3ver.egg-info
+%{python_sitelib}/meteo_qt-%{version}-py*.egg-info
 %{python_sitelib}/meteo_qt/
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/meteo-qt.png
