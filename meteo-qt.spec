@@ -1,7 +1,7 @@
 Summary:	Weather status system tray application
 Name:		meteo-qt
-Version:	0.9.7
-Release:	2
+Version:	0.9.9
+Release:	1
 License:	GPLv3
 Group:		Graphical desktop/Other
 URL:		http://qt-apps.org/content/show.php/meteo-qt?content=167733
@@ -35,6 +35,8 @@ export PATH=%{_libdir}/qt5/bin:$PATH
 mkdir -p %{buildroot}%{_iconsdir}/hicolor/{16x16,32x32}/apps
 convert -scale 16x16 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/meteo-qt.png
 convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/32x32/apps/meteo-qt.png
+
+rm -rf %{buildroot}%{_docdir}/meteo-qt
 
 %files
 %doc TODO CHANGELOG README.md
