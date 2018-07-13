@@ -9,6 +9,7 @@ Source0:	https://github.com/dglent/meteo-qt/archive/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-qt5-devel
 BuildRequires:	qt5-linguist-tools
+BuildRequires:	qtchooser
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	imagemagick
 Requires:	python-qt5
