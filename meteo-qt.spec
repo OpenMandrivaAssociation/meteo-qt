@@ -14,8 +14,8 @@ BuildRequires:	pkgconfig(python3)
 BuildRequires:	imagemagick
 Requires:	python-qt5
 Requires:	python-sip
-Requires:	python3egg(urllib3)
-Requires:	python3egg(lxml)
+Requires:	python3dist(urllib3)
+Requires:	python3dist(lxml)
 Requires:	qt5-qttranslations
 
 %description
