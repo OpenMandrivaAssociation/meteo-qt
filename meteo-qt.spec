@@ -41,7 +41,7 @@ rm -rf %{buildroot}%{_docdir}/meteo-qt
 
 %files
 %doc TODO CHANGELOG README.md
-%{_datadir}/meteo_qt/images/
+#{_datadir}/meteo_qt/images/
 %{_bindir}/%{name}
 %{_iconsdir}/%{name}.png
 %{python_sitelib}/meteo_qt-%{version}-py*.egg-info
