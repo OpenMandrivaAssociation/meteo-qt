@@ -49,3 +49,4 @@ rm -rf %{buildroot}%{_docdir}/meteo-qt
 %{_datadir}/applications/%{name}.desktop
 #{_iconsdir}/hicolor/*/apps/meteo-qt.png
 %{_datadir}/meteo_qt/translations/
+%{_datadir}/icons/weather-few-clouds.png
