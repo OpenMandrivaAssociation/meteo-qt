@@ -4,7 +4,7 @@ Version:	3.4
 Release:	1
 License:	GPLv3
 Group:		Graphical desktop/Other
-URL:		http://qt-apps.org/content/show.php/meteo-qt?content=167733
+URL:		https://qt-apps.org/content/show.php/meteo-qt?content=167733
 Source0:	https://github.com/dglent/meteo-qt/archive/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-qt5-devel
